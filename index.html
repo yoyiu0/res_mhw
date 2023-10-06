@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 뷰포트(viewport) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- swiper.css cdn으로 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- 사용자 정의 css 연결 -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- 파비콘 넣기 -->    
+    <link rel="shortcut icon" href="img/logo2.png" type="image/icon">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- swiper.js cdn으로 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- gsap 플러그인 연결 -->
+    <script src="js/gsap.min.js"></script>
+    <!-- 사용자 정의 js 연결 -->
+    <script src="js/main.js"></script>
+    <title>문화재청</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="center">
+                <!-- 로고 -->
+                <div class="logo">
+                    
+                </div>
+                <!-- 내비게이션 -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">새소식</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도/설명</a></li>
+                                <li><a href="#">문화재 <br>지정예고</a></li>
+                                <li><a href="#">입찰정보</a></li>
+                                <li><a href="#">문화재청<br>소식지</a></li>
+                                <li><a href="#">문화유산<br>관람정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국민참여</a>
+                            <ul class="sub">
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">법정민원신청</a></li>
+                                <li><a href="#">국민신문고</a></li>
+                                <li><a href="#">국민의소리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">행정정보</a>
+                            <ul class="sub">
+                                <li><a href="#">법령정보</a></li>
+                                <li><a href="#">감사·청렴정보</a></li>
+                                <li><a href="#">문화재위원회</a></li>
+                                <li><a href="#">문화재 수리 <br>기술위원회</a></li>
+                                <li><a href="#">무형문화재 <br>위원회</a></li>
+                                <li><a href="#">문화재 <br>발굴조사</a></li>
+                                <li><a href="#">SW사업 정보</a></li>
+                                <li><a href="#">행정자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정보공개</a>
+                            <ul class="sub">
+                                <li><a href="#">문화유산 <br>데이터 개방</a></li>
+                                <li><a href="#">정보공개 <br>제도안내</a></li>
+                                <li><a href="#">(사전)행정 <br>정보공표</a></li>
+                                <li><a href="#">정보목록</a></li>
+                                <li><a href="#">구제혁신</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">문화재청소개</a>
+                            <ul class="sub">
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">일반현황</a></li>
+                                <li><a href="#">주요업무계획</a></li>
+                                <li><a href="#">문화유산연구개발 <br>기본계획</a></li>
+                                <li><a href="#">청장소개</a></li>
+                                <li><a href="#">조직 및 직원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">문화재검색</a>
+                            <ul class="sub">
+                                <li><a href="#">문화재 <br>종목별 검색</a></li>
+                                <li><a href="#">문화재 <br>지역별 검색</a></li>
+                                <li><a href="#">문화재 <br>조건 검색</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 다국어지원,메뉴버튼 -->
+                <div class="top_menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                                    .st0{display:none;}
+                                    .st1{display:inline;}
+                                    .st2{fill:none;stroke:#ffffff;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                                </style><g class="st0" id="Layer_1"/><g id="Layer_2"><ellipse class="st2" cx="64" cy="64" rx="18.9" ry="44.3"/><line class="st2" x1="22.7" x2="105.3" y1="49.2" y2="49.2"/><line class="st2" x1="92.5" x2="22.7" y1="78.8" y2="78.8"/><circle class="st2" cx="64" cy="64" r="44.3"/></g></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu_btn">
+                                <svg enable-background="new 0 0 32 32" id="Filled_Line" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><line fill="none" id="XMLID_837_" stroke="#ffffff" class="menu" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="7" x2="25" y1="16" y2="16"/><line fill="none" id="XMLID_836_" stroke="#ffffff" class="menu" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="7" x2="25" y1="25" y2="25"/><line class="menu" fill="none" id="XMLID_835_" stroke="#ffffff" class="menu" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="7" x2="25" y1="7" y2="7"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 서브메뉴 배경 -->
+            <div class="sub_bg"></div>
+        </header>
+        <section class="sec1">
+            <!-- 메인 슬라이드 - swiper plugin -->
+            <div class="swiper main">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide s1">
+                    <h1>문화유산 수리 현장 공개</h1>
+                  </div>
+                  <div class="swiper-slide s2">
+                    <h1>2023년 해양실크로드 국제학술심포지엄</h1>
+                  </div>
+                  <div class="swiper-slide s3">
+                    <h1>고려 도기</h1>
+                  </div>                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <section class="sec2 scrollSet">
+            <div class="center">
+                <div class="time ani firstAni">
+                    <h2>문화유산채널</h2>
+                    <p class="p1">문화유산을 보는 새로운 창</p>
+                    <button type="button">
+                        <a href="#">바로가기</a>
+                    </button>
+                    <p class="p2">문화유산 채널은 문화재청과<br>한국문화재단이 함께 합니다.</p>
+                </div>
+                <div class="road ani secondAni">
+                    <h2>주요업무계획</h2>
+                    <p class="p1">비전/전략목표</p>
+                    <button type="button">
+                        <a href="#">바로가기</a>
+                    </button>
+                    <p class="p2">문화제청, 어제를 담아<br>내일에 전달합니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec3 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h1>새소식</h1>
+                    <p>공지사항</p>
+                    <button type="button">
+                        <a href="#">바로가기</a>
+                    </button>
+                </div>
+                <div class="swiper notice ani secondAni">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <p class="p1">공지사항</p>
+                                <h1>2023년도 전통문화교육원 전통공예체험교육 시범운영 교육생 모집</h1>
+                                <p class="p2">문화재청 한국전통문화대학교 전통문화교육원에서는 2023년 대구에서 실시하는 전통공예체험교육 시범운영 교육생을 다음과 같이 모집합니다.</p>
+                                <p class="p3">2023.09.18</p>
+                        </div>
+                        <div class="swiper-slide">
+                                <p class="p1">공지사항</p>
+                                <h1>2024년도 세계유산축전 및 문화유산 미디어아트 사업 선정 결과 알림</h1>
+                                <p class="p2">2024년도 세계유산축전 및 문화유산 미디어아트 사업 선정 결과를 붙임과 같이 알려드립니다.</p>
+                                <p class="p3">2023.09.15</p>
+                        </div>
+                        <div class="swiper-slide">
+                                <p class="p1">공지사항</p>
+                                <h1>2024년 전승공동체 활성화 지원 사업 선정결과 알림</h1>
+                                <p class="p2">2024년 전승공동체 활성화 지원 사업 선정목록을 붙임과 같이 알려드립니다.</p>
+                                <p class="p3">2023.09.15</p>
+                        </div>
+                        <div class="swiper-slide">
+                                <p class="p1">공지사항</p>
+                                <h1>2023년도 국가무형문화재 이수심사 8기 심사 결과 공고</h1>
+                                <p class="p2">[국립무형유산원 공고 제2023-120호] 2023년도 국가무형문화재 이수심사 8기 심사 결과 공고</p>
+                                <p class="p3">2023.09.15</p>
+                        </div>
+                        <div class="swiper-slide">
+                                <p class="p1">공지사항</p>
+                                <h1>[2023년 궁능 활용 프로그램 국민평가단] 합격자 공고</h1>
+                                <p class="p2">2023년 궁능 활용프로그램 국민평가단 합격자 명단을 다음과 같이 공고합니다.</p>
+                                <p class="p3">2023.09.15</p>
+                        </div>
+                    </div><!--swiper-wrapper-->
+                    <!-- pagination progress -->
+                    <div class="swiper-pagination"></div>
+                </div><!--swiper-->
+                <!-- prev버튼, next버튼 -->
+                <div class="swiper-button-next ani"></div>
+                <div class="swiper-button-prev ani"></div>
+            </div><!--center end-->
+        </section>
+        <section class="sec4 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h1>새소식</h1>
+                    <p>사진/동영상 뉴스</p>
+                </div>
+                <div class="swiper news ani secondAni">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image img1">
+                                <p class="p1">NEW</p>
+                                <h1 class="name">‘가야고분군’ 유네스코 세계유산 등재</h1>
+                                <p class="p2">문화재청</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img2">
+                                <p class="p1">NEW</p>
+                                <h1>‘활옷 만개(滿開)-<br>조선왕실 여성 혼례복’ 특별전</h1>
+                                <p class="p2">문화재청 국립고궁박물관</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img3">
+                                <p class="p3">NEW</p>
+                                <h1>2023 무형유산축전 개막</h1>
+                                <p class="p2">문화재청 국립무형유산원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img4">
+                                <p class="p3">NEW</p>
+                                <h1>해인사 문화유산 현장점검</h1>
+                                <p class="p2">경상남도 합천군 해인사</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img5">
+                                <p class="p1">NEW</p>
+                                <h1>경주 쪽샘 44호분 발굴성과 시사회 개최</h1>
+                                <p class="p2">국립경주문화재연구소</p>
+                            </div>
+                        </div>
+                    </div><!--swiper-wrapper-->
+                    <!-- pagination progress -->
+                    <div class="swiper-pagination"></div>
+                </div><!--swiper news-->
+                <div class="gong ani">
+                    <div class="img"></div>
+                </div>
+                <!-- prev버튼, next버튼 -->
+                <div class="swiper-button-next ani"></div>
+                <div class="swiper-button-prev ani"></div>
+            </div>
+        </section>
+        <section class="sec5 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>문화재 현황</h2>
+                    <p>(국가지정문화재)</p>
+                </div>
+                <div class="present ani secondAni" id="count-area">
+                    <ul>
+                        <li>
+                            <p>국보</p>
+                            <div class="count">
+                                <span class="num" id="count-item1">354</span>
+                                <b>건</b>
+                            </div>
+                        </li>
+                        <li>
+                            <p>보물</p>
+                            <div class="count">
+                                <span class="num" id="count-item2">2351</span>
+                                <b>건</b>
+                            </div>
+                        </li>
+                        <li>
+                            <p>천연기념물</p>
+                            <div class="count">
+                                <span class="num" id="count-item3">475</span>
+                                <b>건</b>
+                            </div>
+                        </li>
+                        <li>
+                            <p>국가무형문화재</p>
+                            <div class="count">
+                                <span class="num" id="count-item4">155</span>
+                                <b>건</b>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gong2 ani">
+                    <p>보물<br>헌종가레진하도 병풍</p>
+                    <div class="img"></div>
+                </div>
+            </div>
+            <div class="gong ani">
+                <p>보물<br>헌종가레진하도 병풍</p>
+            </div>
+        </section>
+        <section class="sec6 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>주요서비스</h2>
+                    <p>국민과 함께하는 문화유산,<br>모두가 행복한 대한민국</p>
+                    <button type="button">
+                        <a href="#">자세히보기</a>
+                    </button>
+                </div>
+                <div class="service">
+                    <ul>
+                        <li class="ani ani1">
+                            <a href="#" id="a1">사전예약<br>감정</a>
+                            <div class="img img1"></div>
+                        </li>
+                        <li class="ani ani2">
+                            <a href="#" id="a2">문화재<br>기상정보</a>
+                            <div class="img img2"></div>
+                        </li>
+                        <li class="ani ani3">
+                            <a href="#" id="a2">문화재<br>수리정보</a>
+                            <div class="img img3"></div>
+                        </li>
+                        <li class="ani ani4">
+                            <a href="#" id="a3">무형문화재<br>전수교육관</a>
+                            <div class="img img4"></div>   
+                        </li>
+                        <li class="ani ani5">
+                            <a href="#" id="a3">매장문화재<br>발견신고</a>
+                            <div class="img img5"></div>
+                        </li>
+                        <li class="ani ani6">
+                            <a href="#" id="a3">도난문화재<br>정보</a>
+                            <div class="img img6"></div>
+                        </li>
+                        <li class="ani ani7">
+                            <a href="#" id="a3">국가보조금<br>부조리신고</a>
+                            <div class="img img7"></div>
+                        </li>
+                        <li class="ani ani8">
+                            <a href="#" id="a2">성폭력<br>신고센터</a>
+                            <div class="img img8"></div>
+                        </li>
+                        <li class="ani ani9">
+                            <a href="#" id="a3">부패·비리<br>익명신고</a>
+                            <div class="img img9"></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="footer1">
+                    <div class="f_logo">
+                        <img src="img/foot_logo.png" alt="logo">
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">저작권정책</a></li>
+                            <li><a href="#">누리집 오류신고</a></li>
+                            <li><a href="#">도로명주소안내</a></li>
+                            <li><a href="#">정부/지자체 조직도 바로가기</a></li>
+                        </ul>
+                    </div>
+                    <address>
+                        문화재청 고객지원센터 : ☎1600-0064<br>
+                        대전광역시 서구 청사로 189 정부대전청사<br>1동 8-11층, 2동 14층 (우)35208 
+                    </address>
+                    <p>&copy;1999.CULTURAL HERITAGE ADMINISTRATION.<br>ALL RIGHTS RESERVED.</p>
+                </div><!--footer1-->
+                <div class="footer2">
+                    <div class="sns">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/Naver.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/youtube.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/twitter.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="family_site">
+                        <a href="#">산하기관</a>
+                        <div class="family_list">
+                            <ul>
+                                <li><a href="#">한국문화재재단</a></li>
+                                <li><a href="#">국외소재문화재재단</a></li>
+                                <li><a href="#">문화유산국민신탁</a></li>
+                                <li><a href="#">유네스코아테무형유산센터</a></li>
+                                <li><a href="#">전통건축수리기술진흥재단</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- top button -->
+        <div class="top">
+            <a href="#">
+                <img src="img/up-arrow.png" alt="top button">
+            </a>
+        </div>
+
+    </div>
+    <script>
+        // sec5 영역의 count animation
+        // 카운팅 애니메이션 함수
+    function count(element, start, end, duration) {
+        let current = start;
+        const range = end - start;
+        const increment = range / (duration / 10);
+        const stepTime = 50; // 10ms 마다 증가하도록 설정
+
+        let timer = setInterval(function() {
+            current += increment;
+            if (current >= end) {
+                clearInterval(timer);
+                current = end;
+            }
+            element.textContent = formatNumber(current, end);
+        }, stepTime);
+    }
+
+    function formatNumber(number, end) {
+        if (Number.isInteger(end)) {
+            return number.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+        } else {
+            return number.toFixed(1);
+        }
+    }
+
+    // 스크롤 이벤트 리스너
+    window.addEventListener('scroll', function() {
+        const countArea = document.getElementById('count-area');
+        const countAreaPosition = countArea.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+
+        if (countAreaPosition < screenPosition / 2) { // 요소가 반이상 보였을 때 실행
+
+            const count1 = document.getElementById('count-item1');
+            count(count1, 0, 354, 400);
+
+            const count2 = document.getElementById('count-item2');
+            count(count2, 0, 2351, 400);
+
+            const count3 = document.getElementById('count-item3');
+            count(count3, 0, 475, 400);
+
+            const count4 = document.getElementById('count-item4');
+            count(count4, 0, 155, 400);
+
+            // 이벤트 리스너 삭제
+            window.removeEventListener('scroll', arguments.callee);
+        }
+    });
+    </script>
+    <script>
+        //브라우저 해상도가 변경되면 미디어 쿼리 적용하기
+        // 또는 브라우저를 확대, 축소해도 홈페이지 비율 유지하기
+
+        // resize()메서드
+        // 글자크기, padding, margin의 단위를 rem사용하기
+        // jquery window resize codepen <-으로 검색
+
+        // rem:root 가로크기 기준 (roo == window)
+        // vw, vw : device 기준 -> 미디어쿼리를 쓸거니까
+        // resize() 메소드
+
+        (function($) {
+            $.AdjustZoom = function(options) {
+            var option = { zoomRatio : 100 };
+            $.extend(option, options);
+            // 브라우저 배율이 100% 가 아닌 경우 처리
+            if(screen.logicalXDPI != screen.deviceXDPI) {
+                try {
+                //alert(screen.availWidth+", "+screen.logicalXDPI+", "+screen.deviceXDPI);
+                        var ratio = screen.logicalXDPI / screen.deviceXDPI;
+                        var ratio_reverse = screen.deviceXDPI / screen.logicalXDPI;
+                        $('body').css('zoom', ( ratio * option.zoomRatio)+'%');
+                        // ratio=비율
+                        $('body').width(screen.availWidth * ratio_reverse );
+                }catch (e) {
+                    alert("브라우저 배율 보정 중 오류가 발생하였습니다. 창을 닫은 후 다시 열어 주시기 바랍니다.");
+                }
+            }
+        };
+        })(jQuery);
+    </script>
+</body>
+</html>
