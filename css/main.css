@@ -311,7 +311,7 @@ section .center {
     text-indent: 0;
     display:block;
     width:44vw;
-    height:13.3vw;
+    height:13.1vw;
     overflow: hidden;
     word-break: break-word;
     display: -webkit-box;
@@ -764,7 +764,7 @@ footer .family_site > a:after {
     width:0px;
     height:0px;
     content:"";
-    border-top:8px solid #ccc;
+    border-bottom:8px solid #ccc;
     border-left:6px solid transparent;     /*왼쪽 테두리 투명*/
     border-right:6px solid transparent;    /*오른쪽 테두리 투명*/
     position: absolute;
@@ -1378,7 +1378,7 @@ footer .sns ul li {
     .sec3 .swiper .swiper-slide h1 {
         margin-top:1vw;
         width:12vw;
-        height:3.5vw;
+        height:3.3vw;
         font-size: 24px;
         font-weight: 750;
         letter-spacing: -2px;
@@ -1560,12 +1560,17 @@ footer .sns ul li {
     .sec5 .gong p {
         color: #E1C4A6;
         position: absolute;
-        left:600px;
-        top:30px;
+        left:355px;
+        top:0px;
         font-size: 14px;
         font-weight: normal;
         opacity:0.4;
     }
+    .sec5 .gong p br{
+        display: inline-block;
+        content: " ";
+        padding: 0 2px;
+     }
     .sec6 .center {
         position: relative;
         /* 자식객체를 .center의 오른쪽에 배치 */
