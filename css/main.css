@@ -81,7 +81,7 @@ header .center nav > ul > li > a:before {
     width:2px;
     height:14px;
     background-color: #2D465E;
-    right:12vw;
+    right:11vw;
     top:50%;
     transform: translateY(-50%);
 }
@@ -91,7 +91,7 @@ header .center nav > ul > li > a:after {
     width:14px;
     height:2px;
     background-color: #2D465E;
-    right:10.8vw;
+    right:11vw;
     top:50%;
     transform: translateY(-50%);
 }
@@ -377,7 +377,7 @@ section .center {
 }
 
 .sec4 .news .swiper-slide {
-    width:38.3vw;
+    width:38vw;
     height:89.8vw;
 }
 .sec4 .news .swiper-slide .image {
@@ -778,7 +778,7 @@ footer .family_site > a.active:after {
 footer .family_site .family_list {
     width:100%;
     position:absolute;
-    bottom:44px;
+    bottom:42px;
     left:0;
     display: none;
 }
@@ -870,6 +870,15 @@ footer .sns ul li {
         /* 접속한 모바일 장치의 세로길이만큼 슬라이드 높이 설정 */
         height:720px;
     }
+    section .main .s1 {
+        background-image: url(../img/768_banner.png);
+    }
+    section .main .s2 {
+        background-image: url(../img/768_banner2.png);
+    }
+    section .main .s3 {
+        background-image: url(../img/768_banner3.png);
+    }
     .sec2 .center {
         flex-flow:row nowrap;
         gap:3vw;
@@ -927,7 +936,7 @@ footer .sns ul li {
         font-size: 3.1vw;
         padding-bottom: 2.7vw;
     }
-    .sec3 .swiper .swiper-slide {
+    .sec3 .center .swiper-slide {
         width:42vw;
         height:42vw;
         padding:3.5vw 4vw;
@@ -956,11 +965,11 @@ footer .sns ul li {
     }
     .sec3 .swiper .swiper-slide .p2 {
         width:27.5vw;
-        height:9.2vw;
+        height:8.9vw;
     }
     .sec3 .swiper .swiper-slide .p2 {
         margin-top:2.58vw;
-        font-size: 2.7vw;
+        font-size: 2.5vw;
     }
     .sec3 .swiper .swiper-slide .p3 {
         margin-top:5vw;
@@ -1023,14 +1032,60 @@ footer .sns ul li {
     .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
         background-color: #676767;
     }
-    
+    .sec4 {
+        height:100vw;
+    }
+    .sec4 .center .swiper {
+        position: static;
+        width:100%;
+        overflow: hidden;
+        height:65vw;
+    }
+    .sec4 .center .swiper-slide {
+        width:42vw;
+        height:58vw;
+    }
+    .sec4 .news .swiper-slide .image {
+        width:100%;
+        height:100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        color:#fff;
+        padding:5vw;
+    }
+    .sec4 .news .swiper-slide .image .p1 {
+        font-size: 2.5vw;
+    }
+    .sec4 .news .swiper-slide .image h1 {
+        width:27vw;
+        position: absolute;
+        font-size:3.5vw;
+        letter-spacing: mixed;
+        padding-top: 0;
+        bottom:90px;
+    }
+    .sec4 .news .swiper-slide .image .p2 {
+        position: absolute;
+        font-size: 2.3vw;
+        bottom:7vw;
+    }
 
 
 
-
-
-
-
+    .sec4 .gong {
+        display: block;
+        width:16vw;
+        height:14vw;
+        position: absolute;
+        background-image: url(../img/icon_m.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom:60px;
+        left:0;
+    }
     /* section안의 div 애니메이션 대기시간*/
     .firstAni {
         transition-delay: 0s;
@@ -1046,10 +1101,26 @@ footer .sns ul li {
         background-repeat: no-repeat;
         background-size: auto;
         padding:15vw 0;
+        position: relative;
     }
     .sec5 .gong2 {
         display: none;
     }
+    .sec5 .gong {
+        display: block;
+        position: absolute;
+        color: #E1C4A6;
+        opacity:0.4;
+        width:170px;
+        height:24px;
+        bottom:5%;
+        left:60%;
+    }
+    .sec5 .gong p br{
+        display: inline-block;
+        content: " ";
+        padding: 0 2px;
+     }
     .sec5 .center {
         align-items: flex-start;
         justify-content: space-between;
@@ -1098,10 +1169,7 @@ footer .sns ul li {
         transform:translate(-5px, -5px);
         box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
     }
-    /* .sec6 영역의 사각형 객체에 마우스 오버하면 그림자 나옴 */
-    .sec6 .center .service ul li {
-        transition:all 0.2s;
-    }
+    
     .sec6 .center .service ul li {
         position: relative;
         padding:2vw 2vw;
@@ -1116,8 +1184,8 @@ footer .sns ul li {
         position: absolute;
         right:22px;
         bottom:22px;
-        width:5vw;
-        height:5vw;
+        width:4.5vw;
+        height:4.5vw;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1602,10 +1670,6 @@ footer .sns ul li {
         transform:translate(-5px, -5px);
         box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     }
-    /* .sec6 영역의 사각형 객체에 마우스 오버하면 그림자 나옴 */
-    /* .sec6 .center .service ul li {
-        transition:all 0.2s;
-    } */
     .sec6 .center .service ul li {
         position: relative;
         padding:1.2vw 1.2vw;
