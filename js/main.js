@@ -176,6 +176,10 @@ $(document).ready(function(){
           1280:{
             slidesPerView:2,
             spaceBetween:20
+          },
+          1400:{
+            slidesPerView:2,
+            spaceBetween:20
           }
         }
       });
@@ -211,6 +215,10 @@ $(document).ready(function(){
             spaceBetween:20
           },
           1280:{
+            slidesPerView:2,
+            spaceBetween:20
+          },
+          1400:{
             slidesPerView:2,
             spaceBetween:20
           }
