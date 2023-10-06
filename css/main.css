@@ -488,6 +488,7 @@ section .center {
     background-repeat: no-repeat;
     background-size: cover;
     right:50px;
+    
 }
 .sec5 .gong2 p {
     color: #E1C4A6;
@@ -496,7 +497,7 @@ section .center {
     top:20px;
     font-size: 14px;
     font-weight: normal;
-    opacity: 80%;
+    opacity:0.5;
 }
 .sec5 .gong {
     display:none;
@@ -1072,9 +1073,6 @@ footer .sns ul li {
         font-size: 2.3vw;
         bottom:7vw;
     }
-
-
-
     .sec4 .gong {
         display: block;
         width:16vw;
