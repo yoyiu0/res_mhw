@@ -502,8 +502,6 @@ section .center {
 .sec5 .gong {
     display:none;
 }
-
-
 .sec6 .center {
     gap:0;
     align-items: flex-start;
@@ -538,6 +536,14 @@ section .center {
         "list05 list06"
         "list07 list08"
         "list09 .";
+}
+.sec6 .center .service ul li:hover {
+    transform:translate(-5px, -5px);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+/* .sec6 영역의 사각형 객체에 마우스 오버하면 그림자 나옴 */
+.sec6 .center .service ul li {
+    transition:all 0.2s;
 }
 .sec6 .center .service ul li {
     position: relative;
