@@ -356,8 +356,8 @@ section .center {
 }
 .sec3 .swiper .swiper-slide h1 {
     margin-top:5.3vw;
-    width:186px;
-    font-size: 20px;
+    width:44vw;
+    font-size: 4.7vw;
     color:#2D465E;
     font-weight: 750;
     letter-spacing: -1.59px;
@@ -365,7 +365,7 @@ section .center {
 }
 .sec3 .swiper .swiper-slide .p2 {
     margin-top:3.8vw;
-    font-size: 16px;
+    font-size: 3.8vw;
     color:#8A8787;
     letter-spacing: -1px;
     line-height: 115%;
