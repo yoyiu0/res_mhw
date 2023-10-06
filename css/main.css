@@ -81,7 +81,7 @@ header .center nav > ul > li > a:before {
     width:2px;
     height:14px;
     background-color: #2D465E;
-    right:11vw;
+    right:11.5vw;
     top:50%;
     transform: translateY(-50%);
 }
@@ -91,7 +91,7 @@ header .center nav > ul > li > a:after {
     width:14px;
     height:2px;
     background-color: #2D465E;
-    right:11vw;
+    right:10vw;
     top:50%;
     transform: translateY(-50%);
 }
