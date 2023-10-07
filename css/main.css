@@ -536,23 +536,7 @@ section .center {
         "list05 list06"
         "list07 list08"
         "list09 .";
-}
-.sec6 .center .service ul li:hover {
-    transform:translate(-5px, -5px);
-    box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
-}
-/* .sec6 영역의 사각형 객체에 마우스 오버하면 그림자 나옴 */
-.sec6 .center .service ul li {
-    transition:all 0.2s;
-}
-.sec6 .center .service ul li {
     position: relative;
-    padding:3.5vw 3vw;
-    border-radius: 20px;
-    height:100%;
-    background-color: #ECECEC;
-    box-sizing: border-box;
-    cursor: pointer
 }
 .sec6 .center .service ul li:first-child {
     grid-area:list01;
@@ -581,20 +565,28 @@ section .center {
 .sec6 .center .service ul li:nth-child(9) {
     grid-area:list09;
 }
-
-
 .sec6 .center .service ul li a {
+    display: flex;
+    position: absolute;
+    padding:4vw 3.5vw 3vw 3.5vw;
+    bottom:14px;
+    width:100%;
+    height:100%;
     font-size: 16px;
     font-weight: bold;
     color:#2D465E;
-    display:flex;
-    position: relative;
+    background-origin:content-box;
+    background-position:right bottom;
+    background-repeat: no-repeat;
+    background-size: 8.5vw 8.5vw;
+    border-radius:20px;
+    background-color: #ececec
 }
 .sec6 .center .service ul li #a1:after {
     position: absolute;
     content:"";
-    left:60px;
-    top:8px;
+    left:17vw;
+    top:6vw;
     width:8px; height:8px;
     border-top:2px solid #2D465E;
     border-left:2px solid #2D465E;
@@ -604,8 +596,8 @@ section .center {
 .sec6 .center .service ul li #a2:after {
     position: absolute;
     content:"";
-    left:45px;
-    top:8px;
+    left:14vw;
+    top:6vw;
     width:8px; height:8px;
     border-top:2px solid #2D465E;
     border-left:2px solid #2D465E;
@@ -615,53 +607,39 @@ section .center {
 .sec6 .center .service ul li #a3:after {
     position: absolute;
     content:"";
-    left:75px;
-    top:8px;
+    left:21vw;
+    top:6vw;
     width:8px; height:8px;
     border-top:2px solid #2D465E;
     border-left:2px solid #2D465E;
     transform: rotate(135deg);
     margin-left:3px;
 }
-.sec6 .center .service ul li .img {
-    position: absolute;
-    right:19px;
-    bottom:14px;
-    width:8vw;
-    height:8vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.sec6 .center .service ul li .img1 {
+.sec6 .center .service ul .ani1 a {
     background-image: url(../img/icon_01.png);
 }
-.sec6 .center .service ul li .img2 {
+.sec6 .center .service ul .ani2 a {
     background-image: url(../img/icon_02.png);
 }
-.sec6 .center .service ul li .img3 {
-    width:8.5vw;
-    height:8.5vw;
+.sec6 .center .service ul .ani3 a {
     background-image: url(../img/icon_03.png);
 }
-.sec6 .center .service ul li .img4 {
+.sec6 .center .service ul .ani4 a {
     background-image: url(../img/icon_04.png);
 }
-.sec6 .center .service ul li .img5 {
+.sec6 .center .service ul .ani5 a {
     background-image: url(../img/icon_05.png);
 }
-.sec6 .center .service ul li .img6 {
+.sec6 .center .service ul .ani6 a {
     background-image: url(../img/icon_06.png);
 }
-.sec6 .center .service ul li .img7 {
+.sec6 .center .service ul .ani7 a {
     background-image: url(../img/icon_07.png);
 }
-.sec6 .center .service ul li .img8 {
+.sec6 .center .service ul .ani8 a {
     background-image: url(../img/icon_08.png);
 }
-.sec6 .center .service ul li .img9 {
-    width:7vw;
-    height:7vw;
+.sec6 .center .service ul .ani9 a {
     background-image: url(../img/icon_09.png);
 }
 
@@ -1162,50 +1140,42 @@ footer .sns ul li {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-auto-rows: minmax(150px, auto);
-        /* 최대높이 auto 180보단 작아지지말아라 */
-        grid-gap:20px;
+        /* 최대높이 auto 150보단 작아지지말아라 */
+        grid-gap:10px;
         grid-template-areas:
         ". . . list01"
         ". . list02 list03"
         ". list04 list05 list06"
         "list07 list08 list09 .";
     }
-    .sec6 .center .service ul li:hover {
-        transform:translate(-5px, -5px);
-        box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
-    }
-    
-    .sec6 .center .service ul li {
-        position: relative;
-        padding:2vw 2vw;
-        border-radius: 20px;
-        height:100%;
-        box-sizing: border-box;
-    }
     .sec6 .center .service ul li a {
-        font-size: 2.3vw;
-    }
-    .sec6 .center .service ul li .img {
+        display: flex;
         position: absolute;
-        right:22px;
-        bottom:22px;
-        width:4.5vw;
-        height:4.5vw;
-        background-position: center;
+        padding:3vw 2.5vw 3vw 3vw;
+        bottom:14px;
+        width:100%;
+        height:100%;
+        font-size:2.1vw;
+        font-weight: bold;
+        color:#2D465E;
+        background-origin:content-box;
+        background-position:right bottom;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 5vw 5vw;
+        border-radius:20px;
+        background-color: #ececec
     }
     .sec6 .center .service ul li #a1:after {
-        top:10px;
-        left:65px;
+        left:10.5vw;
+        top:4vw;
     }
     .sec6 .center .service ul li #a2:after {
-        top:10px;
-        left:50px;
+        left:8.5vw;
+        top:4vw;
     }
     .sec6 .center .service ul li #a3:after {
-        top:10px;
-        left:80px;
+        left:12.5vw;
+        top:4vw;
     }
     footer .f_logo {
         width:30vw;
@@ -1671,42 +1641,42 @@ footer .sns ul li {
         ". list04 list05 list06"
         "list07 list08 list09 .";
     }
-    .sec6 .center .service ul li:hover {
-        transform:translate(-5px, -5px);
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    /* .sec6 영역의 사각형 객체에 마우스 오버하면 그림자 나옴 */
+    .sec6 .center .service ul li a {
+        transition:all 0.3s;
     }
-    .sec6 .center .service ul li {
-        position: relative;
-        padding:1.2vw 1.2vw;
-        border-radius: 20px;
-        height:100%;
-        background-color: #ECECEC;
-        box-sizing: border-box;
+    .sec6 .center .service ul li a:hover {
+        transform:translate(-5px, -5px);
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
     }
     .sec6 .center .service ul li a {
-        font-size: 21px;
-    }
-    .sec6 .center .service ul li .img {
+        display: flex;
         position: absolute;
-        right:22px;
-        bottom:22px;
-        width:3.4vw;
-        height:3.4vw;
-        background-position: center;
+        padding:1.5vw 1.5vw 1.5vw 1.5vw;
+        bottom:14px;
+        width:100%;
+        height:100%;
+        font-size:1.2vw;
+        font-weight: bold;
+        color:#2D465E;
+        background-origin:content-box;
+        background-position:right bottom;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: 2.6vw 2.6vw;
+        border-radius:20px;
+        background-color: #ececec
     }
     .sec6 .center .service ul li #a1:after {
-        top:10px;
-        left:80px;
+        top:2.2vw;
+        left:6vw;
     }
     .sec6 .center .service ul li #a2:after {
-        top:10px;
-        left:60px;
+        top:2.2vw;
+        left:5vw;
     }
     .sec6 .center .service ul li #a3:after {
-        top:10px;
-        left:96px;
+        top:2.2vw;
+        left:7.5vw;
     }
     
     footer {
